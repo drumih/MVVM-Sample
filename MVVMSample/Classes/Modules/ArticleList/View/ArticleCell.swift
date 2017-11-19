@@ -10,8 +10,6 @@ import UIKit
 import Kingfisher
 import TableKit
 
-
-
 class ArticleCell: UITableViewCell, ConfigurableCell {
     
     private(set) var viewModel: ArticleCellViewModel? {
