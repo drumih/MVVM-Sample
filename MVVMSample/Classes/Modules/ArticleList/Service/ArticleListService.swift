@@ -21,10 +21,17 @@ class FakeArticleInfoViewModel: ArticleListService {
     private func generateFakeArticles() -> [Article] {
         let url = URL(string: "http://topclassiccarsforsale.com/uploads/photoalbum/1982-porsche-911-sc-primo-condition-3.jpg")!
         let firstArticle = Article(identifier: "first",
-                                   title: "Article Title",
+                                   title: "Article Title 2",
                                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                                    date: Date(),
                                    iamgeURL: url)
-        return [firstArticle]
+        
+        let secondArticle = Article(identifier: "first",
+                                    title: "Article Title 2",
+                                    text: "Fusce posuere, erat et dictum consectetur, erat magna posuere erat, sed egestas lectus tortor id urna. ",
+                                    date: Date(),
+                                    iamgeURL: url)
+        
+        return [firstArticle, secondArticle]
     }
 }
