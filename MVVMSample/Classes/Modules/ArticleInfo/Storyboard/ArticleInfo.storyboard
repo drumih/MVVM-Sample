@@ -10,20 +10,36 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Article Info View Controller-->
         <scene sceneID="jff-gn-BN5">
             <objects>
-                <viewController id="GQb-Hz-6ER" sceneMemberID="viewController">
+                <viewController id="GQb-Hz-6ER" customClass="ArticleInfoViewController" customModule="MVVMSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RvJ-9j-ct5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ew5-l1-DkN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ew5-l1-DkN" firstAttribute="top" secondItem="RvJ-9j-ct5" secondAttribute="top" id="5xY-th-nP8"/>
+                            <constraint firstItem="ew5-l1-DkN" firstAttribute="bottom" secondItem="w4B-1u-CpZ" secondAttribute="bottom" id="64y-BJ-Es4"/>
+                            <constraint firstItem="ew5-l1-DkN" firstAttribute="leading" secondItem="w4B-1u-CpZ" secondAttribute="leading" id="CfT-Za-rK8"/>
+                            <constraint firstItem="ew5-l1-DkN" firstAttribute="trailing" secondItem="w4B-1u-CpZ" secondAttribute="trailing" id="I2N-0j-i6w"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="w4B-1u-CpZ"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="tableView" destination="ew5-l1-DkN" id="ypa-5i-4Rf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnv-qM-JDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="146"/>
+            <point key="canvasLocation" x="120.8" y="145.27736131934034"/>
         </scene>
     </scenes>
 </document>

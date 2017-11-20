@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		197E76E41FC233ED005FF15F /* ArticleInfoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E76E31FC233ED005FF15F /* ArticleInfoCellViewModel.swift */; };
+		197E76E61FC23661005FF15F /* ArticleInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E76E51FC23661005FF15F /* ArticleInfoService.swift */; };
+		197E76E81FC243F9005FF15F /* ArticleInfoAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E76E71FC243F9005FF15F /* ArticleInfoAssembly.swift */; };
+		197E76EA1FC24BDD005FF15F /* ArticleInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E76E91FC24BDD005FF15F /* ArticleInfoCell.swift */; };
+		197E76EC1FC24C76005FF15F /* ArticleInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 197E76EB1FC24C76005FF15F /* ArticleInfoCell.xib */; };
+		197E76EF1FC253EC005FF15F /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E76EE1FC253EC005FF15F /* Dispatch.swift */; };
 		1983D4A91FC0E453009F8270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1983D4991FC0E453009F8270 /* AppDelegate.swift */; };
 		1983D4AF1FC18146009F8270 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1983D4AE1FC18146009F8270 /* Client.swift */; };
 		1983D4B21FC1819A009F8270 /* CoreComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1983D4B11FC1819A009F8270 /* CoreComponents.swift */; };
@@ -47,6 +53,12 @@
 
 /* Begin PBXFileReference section */
 		1690CEDAE9EFF4B549EBAD95 /* Pods-MVVMSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMSample/Pods-MVVMSample.release.xcconfig"; sourceTree = "<group>"; };
+		197E76E31FC233ED005FF15F /* ArticleInfoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleInfoCellViewModel.swift; sourceTree = "<group>"; };
+		197E76E51FC23661005FF15F /* ArticleInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleInfoService.swift; sourceTree = "<group>"; };
+		197E76E71FC243F9005FF15F /* ArticleInfoAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleInfoAssembly.swift; sourceTree = "<group>"; };
+		197E76E91FC24BDD005FF15F /* ArticleInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleInfoCell.swift; sourceTree = "<group>"; };
+		197E76EB1FC24C76005FF15F /* ArticleInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleInfoCell.xib; sourceTree = "<group>"; };
+		197E76EE1FC253EC005FF15F /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		1983D4991FC0E453009F8270 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1983D4AE1FC18146009F8270 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		1983D4B11FC1819A009F8270 /* CoreComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreComponents.swift; sourceTree = "<group>"; };
@@ -100,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		197E76ED1FC253CE005FF15F /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				197E76EE1FC253EC005FF15F /* Dispatch.swift */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
 		1983D4951FC0E453009F8270 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +135,7 @@
 		1983D4961FC0E453009F8270 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				197E76ED1FC253CE005FF15F /* Dispatch */,
 				1983D4DA1FC22953009F8270 /* Localization */,
 				1983D4C71FC1D7BA009F8270 /* Date */,
 				1983D4C31FC1D306009F8270 /* UI */,
@@ -224,7 +245,6 @@
 				1983D4A61FC0E453009F8270 /* View */,
 				1983D4A31FC0E453009F8270 /* ViewModel */,
 				1983D4A71FC0E453009F8270 /* Service */,
-				1983D4A81FC0E453009F8270 /* Router */,
 			);
 			path = ArticleInfo;
 			sourceTree = "<group>";
@@ -233,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				1983D4D81FC2234F009F8270 /* ArticleInfoViewModel.swift */,
+				197E76E31FC233ED005FF15F /* ArticleInfoCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -248,6 +269,7 @@
 		1983D4A51FC0E453009F8270 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				197E76E71FC243F9005FF15F /* ArticleInfoAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -256,6 +278,8 @@
 			isa = PBXGroup;
 			children = (
 				1983D4D61FC221F1009F8270 /* ArticleInfoViewController.swift */,
+				197E76E91FC24BDD005FF15F /* ArticleInfoCell.swift */,
+				197E76EB1FC24C76005FF15F /* ArticleInfoCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,15 +287,9 @@
 		1983D4A71FC0E453009F8270 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				197E76E51FC23661005FF15F /* ArticleInfoService.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		1983D4A81FC0E453009F8270 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		1983D4B01FC18183009F8270 /* Assembly */ = {
@@ -472,6 +490,7 @@
 				1983D4DF1FC22A69009F8270 /* Localizable.strings in Resources */,
 				19C8D4501FC0DC2C00C30CF2 /* Assets.xcassets in Resources */,
 				1983D4D51FC20A49009F8270 /* ArticleInfo.storyboard in Resources */,
+				197E76EC1FC24C76005FF15F /* ArticleInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,15 +574,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				197E76E61FC23661005FF15F /* ArticleInfoService.swift in Sources */,
 				1983D4C01FC1898A009F8270 /* ArticleCell.swift in Sources */,
 				1983D4AF1FC18146009F8270 /* Client.swift in Sources */,
 				1983D4DC1FC2296B009F8270 /* LocalizationHelper.swift in Sources */,
 				1983D4C51FC1D337009F8270 /* UIConstants.swift in Sources */,
 				1983D4D31FC209EC009F8270 /* UIViewController+Reactive.swift in Sources */,
+				197E76EA1FC24BDD005FF15F /* ArticleInfoCell.swift in Sources */,
 				1983D4CD1FC1F218009F8270 /* ArticleListRouter.swift in Sources */,
 				1983D4B71FC183FB009F8270 /* ArticleListViewModel.swift in Sources */,
 				1983D4CF1FC20122009F8270 /* ArticleListAssembly.swift in Sources */,
 				1983D4CB1FC1F15B009F8270 /* ArticleListService.swift in Sources */,
+				197E76E81FC243F9005FF15F /* ArticleInfoAssembly.swift in Sources */,
+				197E76E41FC233ED005FF15F /* ArticleInfoCellViewModel.swift in Sources */,
+				197E76EF1FC253EC005FF15F /* Dispatch.swift in Sources */,
 				1983D4C91FC1D7E1009F8270 /* DateFormatter.swift in Sources */,
 				1983D4D71FC221F1009F8270 /* ArticleInfoViewController.swift in Sources */,
 				1983D4D91FC2234F009F8270 /* ArticleInfoViewModel.swift in Sources */,

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="324" id="ovS-Pf-4yO" customClass="ArticleInfoCell" customModule="MVVMSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="324"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ovS-Pf-4yO" id="mKs-vR-RZG">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t7A-s3-Hx6">
+                        <rect key="frame" x="27" y="11" width="320" height="180"/>
+                        <color key="backgroundColor" red="0.84200939119170981" green="0.84200939119170981" blue="0.84200939119170981" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="320" id="TOF-7y-yl5"/>
+                            <constraint firstAttribute="height" constant="180" id="utA-kl-mau"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pn-rO-sN0">
+                        <rect key="frame" x="24" y="199" width="327" height="114"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="7pn-rO-sN0" secondAttribute="bottom" id="2LD-32-iWX"/>
+                    <constraint firstItem="t7A-s3-Hx6" firstAttribute="centerX" secondItem="mKs-vR-RZG" secondAttribute="centerX" id="jn4-t7-PBH"/>
+                    <constraint firstItem="t7A-s3-Hx6" firstAttribute="top" secondItem="mKs-vR-RZG" secondAttribute="topMargin" id="ngF-Hq-QNS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7pn-rO-sN0" secondAttribute="trailing" constant="8" id="nwV-vg-CG3"/>
+                    <constraint firstItem="7pn-rO-sN0" firstAttribute="leading" secondItem="mKs-vR-RZG" secondAttribute="leadingMargin" constant="8" id="oZO-Of-ldk"/>
+                    <constraint firstItem="7pn-rO-sN0" firstAttribute="top" secondItem="t7A-s3-Hx6" secondAttribute="bottom" constant="8" id="wDF-t5-NyP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="articleImageView" destination="t7A-s3-Hx6" id="sZu-El-Td8"/>
+                <outlet property="articleTextLabel" destination="7pn-rO-sN0" id="nS2-fv-yjE"/>
+            </connections>
+            <point key="canvasLocation" x="-29.5" y="203"/>
+        </tableViewCell>
+    </objects>
+</document>
