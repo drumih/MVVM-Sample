@@ -1,6 +1,9 @@
 ## MVVM Sample
 Простой пример реализации архитектуры MVVM на языке Swift с использованием ReactiveCocoa и Swinject.
 
+### Презентация
+https://yadi.sk/i/ObxA9oLZ3PqoXw
+
 ### Установка проекта
 Выполните Clone проекта и выполните `pod install`
 
