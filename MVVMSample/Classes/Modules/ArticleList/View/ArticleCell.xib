@@ -64,7 +64,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="articelImageView" destination="jdQ-Yz-agI" id="xuc-qJ-GJk"/>
+                <outlet property="articleImageView" destination="jdQ-Yz-agI" id="PFH-Cw-MkZ"/>
                 <outlet property="articleTextLabel" destination="dMp-Q8-3aF" id="LSD-tl-ueP"/>
                 <outlet property="dateLabel" destination="BLU-Ph-fN0" id="ccZ-Zh-JIA"/>
                 <outlet property="titleLabel" destination="Ujl-9a-lwN" id="KcM-QN-OXE"/>

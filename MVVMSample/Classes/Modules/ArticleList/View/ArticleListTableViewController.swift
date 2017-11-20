@@ -13,11 +13,10 @@ import TableKit
 class ArticleListViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
+    private var tableDirector: TableDirector!
     var refreshControll: UIRefreshControl!
     
     var viewModel: ArticleListViewModel! //injectable
-    
-    private var tableDirector: TableDirector!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +41,16 @@ class ArticleListViewController: UIViewController {
         navigationItem.title = LocalizedString(forKey: "main.articles.title")
     }
     
+    private func setupTableDirector() {
+        self.tableDirector = TableDirector(tableView: tableView)
+    }
+    
+    private func setupRefreshControll() {
+        refreshControll = UIRefreshControl()
+        tableView.addSubview(refreshControll)
+        refreshControll.reactive.refresh = CocoaAction<UIRefreshControl>(viewModel.loadItems)
+    }
+    
     private func setupFlow() {
         viewModel.items
             .producer
@@ -58,14 +67,5 @@ class ArticleListViewController: UIViewController {
                 self?.tableDirector += section
                 self?.tableDirector.reload()
         }
-    }
-    
-    private func setupTableDirector() {
-        self.tableDirector = TableDirector(tableView: tableView)
-    }
-    private func setupRefreshControll() {
-        refreshControll = UIRefreshControl()
-        tableView.addSubview(refreshControll)
-        refreshControll.reactive.refresh = CocoaAction<UIRefreshControl>(viewModel.loadItems)
     }
 }

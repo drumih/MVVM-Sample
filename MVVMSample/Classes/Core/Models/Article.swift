@@ -10,6 +10,7 @@ import UIKit
 
 struct Article {
 
+    let identifier: String
     let title: String
     let text: String
     let date: Date

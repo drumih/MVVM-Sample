@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let assembler = AppDelegate.createAssembler()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        UIViewController.swizzle()
         return true
     }
 
@@ -47,7 +47,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     fileprivate static func createAssembler() -> Assembler {
-        let assemblies: [Assembly] = [CoreComponents(), ArticleListAssembly()]
+        let assemblies: [Assembly] = [CoreComponents(),
+                                      ArticleListAssembly(),
+                                      ArticleInfoAssembly()]
         return Assembler(assemblies, container: SwinjectStoryboard.defaultContainer)
     }
 }
