@@ -9,10 +9,13 @@
 import UIKit
 import Swinject
 
-class CoreComponents: Assembly {
-    func assemble(container: Container) {
-        container.register(Client.self) { _ in
-            BaseClient()
-        }
-    }
-}
+// TODO: Uncomment then Client will be implemented
+
+//class CoreComponents: Assembly {
+//    func assemble(container: Container) {
+//        container.register(Client.self) { _ in
+//            BaseClient()
+//        }
+//    }
+//}
+

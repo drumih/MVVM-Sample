@@ -13,18 +13,6 @@ protocol ArticleListService {
     func getAllArticles() -> SignalProducer<[Article], AnyError>
 }
 
-class BaseArticleListService: ArticleListService {
-    private let client: Client
-    
-    init(client: Client) {
-        self.client = client
-    }
-    
-    func getAllArticles() -> SignalProducer<[Article], AnyError> {
-        fatalError()
-    }
-}
-
 class FakeArticleInfoViewModel: ArticleListService {
     func getAllArticles() -> SignalProducer<[Article], AnyError> {
         return SignalProducer(value: generateFakeArticles()).delay(2, on: QueueScheduler.main)

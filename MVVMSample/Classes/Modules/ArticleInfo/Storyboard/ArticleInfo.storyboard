@@ -32,7 +32,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w4B-1u-CpZ"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
                         <outlet property="tableView" destination="ew5-l1-DkN" id="ypa-5i-4Rf"/>
                     </connections>
