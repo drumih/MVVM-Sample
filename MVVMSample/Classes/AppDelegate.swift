@@ -47,8 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     fileprivate static func createAssembler() -> Assembler {
-        let assemblies: [Assembly] = [CoreComponents(),
-                                      ArticleListAssembly(),
+        let assemblies: [Assembly] = [ArticleListAssembly(),
                                       ArticleInfoAssembly()]
         return Assembler(assemblies, container: SwinjectStoryboard.defaultContainer)
     }

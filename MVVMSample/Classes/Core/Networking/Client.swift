@@ -8,10 +8,13 @@
 
 import UIKit
 
-protocol Client {
-    
-}
+// TODO: add Client implementation
 
-class BaseClient: Client {
-    
-}
+//protocol Client {
+//
+//}
+//
+//class BaseClient: Client {
+//
+//}
+
